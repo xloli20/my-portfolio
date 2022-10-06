@@ -46,9 +46,9 @@ class Portfolio extends React.Component {
         {
           id: "4",
           preview: Preview4,
-          title: "Sneakers",
+          title: "Movies App",
           tag: "android",
-          link: ""
+          link: "https://github.com/xloli20/popularMovies"
         },
         {
           id: "5",
@@ -60,9 +60,9 @@ class Portfolio extends React.Component {
         {
           id: "6",
           preview: Preview6,
-          title: "lemons",
-          tag: "3d",
-          link: ""
+          title: "Baking App",
+          tag: "android",
+          link: "https://github.com/xloli20/BakingApp"
         },
       ],
       // PORTFOLIO GALLERY WILL LOAD THIS AFTER FUNCTION "filterGallery" FINISH FILTERING
