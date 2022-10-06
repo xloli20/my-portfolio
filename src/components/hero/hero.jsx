@@ -18,7 +18,7 @@ const hero = () => (
               My name is Alaa Alzahrani.
             </h1>
             <p className="font12">
-              I am a passionate freelancer in web developement, Android developement, and 3D Art. 
+            Software Developer with Computer Science background, and experience in different fields in development, such as, Android, Flutter, and Web. passionate also about 3D modeling and 3D Art in general.
             </p>
             <Button label="SEND MESSAGE" target={"contact"} />
           </div>

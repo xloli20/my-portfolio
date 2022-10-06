@@ -25,23 +25,23 @@ class Portfolio extends React.Component {
         {
           id: "1",
           preview: Preview1,
-          title: "Lamp",
+          title: "Melodies Web App",
           tag: "web",
-          link: ""
+          link: "https://github.com/xloli20/MelodiesAppFrontEnd"
         },
         {
           id: "2",
           preview: Preview2,
-          title: "Smartwatch",
-          tag: "web",
-          link: ""
+          title: "AR View App",
+          tag: "android",
+          link: "https://github.com/xloli20/ARViewApp"
         },
         {
           id: "3",
           preview: Preview3,
-          title: "Speakerphone",
-          tag: "android",
-          link: ""
+          title: "3D Guitar",
+          tag: "3d",
+          link: "https://www.artstation.com/artwork/ELNw42"
         },
         {
           id: "4",
@@ -53,9 +53,9 @@ class Portfolio extends React.Component {
         {
           id: "5",
           preview: Preview5,
-          title: "Label",
+          title: "Old Cathedral Street Lamp",
           tag: "3d",
-          link: ""
+          link: "https://www.artstation.com/artwork/0nr69Y"
         },
         {
           id: "6",
@@ -123,7 +123,7 @@ class Portfolio extends React.Component {
     let projectsRender = null;
     if (this.state.filterResult) {
       projectsRender = this.state.filterResult.map((project) => (
-        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} />
+        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} link={project.link} />
       ));
     }
     // PORTFOLIO GALLERY BREAKPOINTS

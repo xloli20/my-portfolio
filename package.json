@@ -17,7 +17,7 @@
     "react-masonry-css": "^1.0.14",
     "react-reveal": "^1.2.2",
     "emailjs-com": "^2.4.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "4.14.1",
     "object-assign": "^4.1.1"
   },
   "scripts": {
