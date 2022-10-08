@@ -27,42 +27,66 @@ class Portfolio extends React.Component {
           preview: Preview1,
           title: "Melodies Web App",
           tag: "web",
-          link: "https://github.com/xloli20/MelodiesAppFrontEnd"
+          link: "https://github.com/xloli20/MelodiesAppFrontEnd",
+          des: "A Music App Allows Users To Listen, Explore And Search For Their Music ! " 
+          + <a href="https://github.com/xloli20/MelodiesAppFrontEnd">to find out more</a>,
+          duration: "4 weeks",
+          skills: "React,JS, Axios, React Bootstrap, Material UI, HTML, CSS, SCSS, JSS"
         },
         {
           id: "2",
           preview: Preview2,
           title: "AR View App",
           tag: "android",
-          link: "https://github.com/xloli20/ARViewApp"
+          link: "https://github.com/xloli20/ARViewApp",
+          des: "ARView App is an android entertainment app that stands on Augmented Reality technology, and is dedicated towards new things for creativity and imagination."
+          + <a href="https://github.com/xloli20/ARViewApp">to find out more</a>,
+          duration: "6 months",
+          skills: "Firbase, Google ARCore, Google Maps."
         },
         {
           id: "3",
           preview: Preview3,
           title: "3D Guitar",
           tag: "3d",
-          link: "https://www.artstation.com/artwork/ELNw42"
+          link: "https://www.artstation.com/artwork/ELNw42",
+          des: "Guitar Model: Yamaha C40. Modeled in Maya and textured in Substance Painter."
+          + <a href="https://www.artstation.com/artwork/ELNw42">to find out more</a>,
+          duration: "3 months",
+          skills: "Maya, Substance Painter."
         },
         {
           id: "4",
           preview: Preview4,
           title: "Movies App",
           tag: "android",
-          link: "https://github.com/xloli20/popularMovies"
+          link: "https://github.com/xloli20/popularMovies",
+          des: "an app to help users discover popular and recent movies. Movies data are fetched from the Internet with theMovieDB API. The app allows the user to change sort order by the most popular or by most rating. View and play trailers, read reviews of a selected movie, allow users to mark a movie as a favorite and store it locally. The app uses Android's modern toolkit Jetpack Compose."
+          + <a href="https://github.com/xloli20/popularMovies">to find out more</a>,
+          duration: "2 weeks",
+          skills: "Java, Room Database, Android Architecture Components (Room, LiveData, ViewModel and Lifecycle), Responsive Design."
         },
         {
           id: "5",
           preview: Preview5,
           title: "Old Cathedral Street Lamp",
           tag: "3d",
-          link: "https://www.artstation.com/artwork/0nr69Y"
+          link: "https://www.artstation.com/artwork/0nr69Y",
+          des: "This Old Cathedral Street Lamp is part of project has been done by a group of seven. Project Wild is a code name for an environment design study based on Bloodborne game from FromSoftware, Inc."
+          + <a href="https://www.artstation.com/artwork/0nr69Y">to find out more</a>,
+          duration: "2 weeks",
+          skills: "Maya."
         },
         {
           id: "6",
           preview: Preview6,
           title: "Baking App",
           tag: "android",
-          link: "https://github.com/xloli20/BakingApp"
+          link: "https://github.com/xloli20/BakingApp",
+          des: "an app to help users baking Recipes with the ingreiidient and steps with a video with each steps. Recipies data are fetched from the Internet with a Rest API. "
+          + <a href="https://github.com/xloli20/BakingApp">to find out more</a>,
+          duration: "2-3 weeks",
+          skills: "Espresso UI test, ExoPlayer, Widgets, RestAPI."
         },
       ],
       // PORTFOLIO GALLERY WILL LOAD THIS AFTER FUNCTION "filterGallery" FINISH FILTERING
@@ -123,7 +147,7 @@ class Portfolio extends React.Component {
     let projectsRender = null;
     if (this.state.filterResult) {
       projectsRender = this.state.filterResult.map((project) => (
-        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} link={project.link} />
+        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} link={project.link} des={project.des} skills={project.skills} duration={project.duration} />
       ));
     }
     // PORTFOLIO GALLERY BREAKPOINTS
